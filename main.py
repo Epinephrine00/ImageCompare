@@ -4,6 +4,8 @@ from PyQt5.QtCore import Qt
 import os
 import sys
 from selectfolder import Select
+from PRGRMINFO import ProgramInfo
+from DEVINFO import DevInfo
 
 dir = os.getcwd() + '\\data\\'
 _translate = QtCore.QCoreApplication.translate
@@ -124,8 +126,12 @@ class Form(QtWidgets.QMainWindow, ui):
         self.label_2.setPixmap(QtGui.QPixmap(imagefile2))
     
     def programInfo(self):
+        pinfo = ProgramInfo()
+        a = pinfo.showModal()
         return
     def devloperInfo(self):
+        dinfo = DevInfo()
+        a = dinfo.showModal()
         return
     def rightButton(self):
         self.index+=1
