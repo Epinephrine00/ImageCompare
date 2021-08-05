@@ -137,6 +137,7 @@ class Form(QtWidgets.QMainWindow, ui):
             self.label_2.setPixmap(QtGui.QPixmap(imagefile2))
         else:
             self.label.setPixmap(QtGui.QPixmap(dir+'404.png'))
+        self.statusBar.showMessage('현재 파일 : '+self.dirList[self.index])
     
     def programInfo(self):
         pinfo = ProgramInfo()

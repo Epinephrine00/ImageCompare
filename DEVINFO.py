@@ -10,7 +10,7 @@ class DevInfo(QtWidgets.QDialog, subui):
         self.setUI()
 
     def setUI(self):
-        self.setFixedSize(242,106)
+        self.setFixedSize(242,132)
         self.setupUi(self)
         self.pushButton_3.clicked.connect(self.discord)
         self.pushButton_2.clicked.connect(self.github)
